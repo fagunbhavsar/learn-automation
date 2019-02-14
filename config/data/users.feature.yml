@@ -1,0 +1,12 @@
+Login as zinc admin:
+  user_nickname:  "fbhavsar"
+
+Login as a school admin:
+  user_nickname:  "Admin User"
+
+Login as a zinc student:
+  user_nickname:  "Student User"
+
+Login as a school teacher:
+  user_nickname:  "Teacher User"
+

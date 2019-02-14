@@ -1,0 +1,109 @@
+Student filter for Vocab Games by category:
+  expected_vocabulary_sets:
+    by_zinc:
+      - "Blah 3"
+      - "Farenheit 451 - Test Vocab Set"
+      - "Grade 7 - Set 1"
+      - "Grade 7 - Set 2"
+      - "Grade 7 - Set 3"
+      - "Grade 7 - Set 4"
+      - "Grade 7 - Set 5"
+      - "Grade 7 - Set 6"
+      - "Grade 7 - Set 7"
+      - "Grade 7 - Set 8"
+    by_teachers:
+      - "2001 A Space Odyssey"
+      - "Excerpt"
+      - "Great set"
+      - "Joy Luck Test Deck"
+      - "Joy Luck Test Deck!"
+      - "KC test 2"
+      - "New UI Test Set"
+      - "Sairam Set"
+      - "Set New"
+      - "Some new words. . ."
+
+Student filter for Vocab Games by grades:
+  expected_vocabulary_sets:
+    by_zinc:
+      - 10 Word Vocab Set for ''You've got to find what you love,' Jobs says.'
+      - 10 Word Vocab Set for '1976 Democratic National Convention Keynote Address'
+      - 10 Word Vocab Set for '2 Charts That Put the Chinese Pollution Crisis in Perspective'
+      - 10 Word Vocab Set for '20-Year-Old Hunter S. Thompson’s Superb Advice on How to
+        Find Your Purpose and Live a Meaningful Life '
+      - '10 Word Vocab Set for ''3 Billion to Zero: What Happened to the Passenger Pigeon?
+        '''
+      - 10 Word Vocab Set for '6 hostage negotiation techniques that will get you what you
+        want'
+      - 10 Word Vocab Set for '99% of the plastic we throw in the ocean has mysteriously
+        disappeared'
+      - 10 Word Vocab Set for 'A 'Macbeth' Mash-up'
+      - 10 Word Vocab Set for 'A 13-year-old eagle huntress in Mongolia'
+      - 10 Word Vocab Set for 'A Child's Wild Kingdom '
+    by_teachers:
+      - How Microscopic Ocean Life May Help Make it Rain
+      - Joy Luck Test Deck
+      - Joy Luck Test Deck!
+      - Marjorie's set for awesome kids
+      - New UI Test Set
+      - Test Deck for Safari with Image
+      - Test SBS
+      - Test Set
+      - Test set
+      - Test set
+
+
+Student views next pages of created by zinc and teachers:
+  by_zinc:
+    pages:
+      one:
+        - 10 Word Vocab Set for ''You've got to find what you love,' Jobs says.'
+        - 10 Word Vocab Set for '1976 Democratic National Convention Keynote Address'
+        - 10 Word Vocab Set for '2 Charts That Put the Chinese Pollution Crisis in Perspective'
+        - 10 Word Vocab Set for '20-Year-Old Hunter S. Thompson’s Superb Advice on How to
+          Find Your Purpose and Live a Meaningful Life '
+        - '10 Word Vocab Set for ''3 Billion to Zero: What Happened to the Passenger Pigeon?
+          '''
+        - 10 Word Vocab Set for '6 hostage negotiation techniques that will get you what you
+          want'
+        - 10 Word Vocab Set for '99% of the plastic we throw in the ocean has mysteriously
+          disappeared'
+        - 10 Word Vocab Set for 'A 'Macbeth' Mash-up'
+        - 10 Word Vocab Set for 'A 13-year-old eagle huntress in Mongolia'
+        - 10 Word Vocab Set for 'A Child's Wild Kingdom '
+      two:
+        -  "10 Word Vocab Set for 'A Faster Human: Are We Unique In Our Ability To Get Better?'"
+        -  "10 Word Vocab Set for 'A Former NBA Coach Argues That Coaches Are Not Responsible for Outcomes'"
+        -  "10 Word Vocab Set for 'A Linguist Explains the Grammar of Doge. Wow.'"
+        -  "10 Word Vocab Set for 'A Modest Proposal'"
+        -  "10 Word Vocab Set for 'A Natural Wonder in Peril'"
+        -  "10 Word Vocab Set for 'A New Frontier in Animal Intelligence'"
+        -  "10 Word Vocab Set for 'A Perfect and Beautiful Machine'"
+        -  "10 Word Vocab Set for 'A Philosophy for Protestors'"
+        -  "10 Word Vocab Set for 'A Previously Unpublished Chapter of Charlie and the Chocolate Factory'"
+        - "10 Word Vocab Set for 'A Righteous Man and the Imperative to Act'"
+
+  by_teachers:
+    pages:
+      one:
+        -  "2001 A Space Odyssey"
+        -  "Chapter 3"
+        -  Excerpt
+        -  "Great set"
+        -  "How Microscopic Ocean Life May Help Make it Rain"
+        -  "Joy Luck Test Deck"
+        -  "Joy Luck Test Deck!"
+        -  "KC test 2"
+        -  "Marjorie's set for awesome kids"
+        - "New UI Test Set"
+      two:
+        -  "New Vocab Set for Test Fagun"
+        -  "Reader PRD Words"
+        -  "Sairam Set"
+        -  "Set New"
+        -  "Some new words. . ."
+        -  "Somethign ag again"
+        -  "Test Deck for Safari with Image"
+        -  "Test SBS"
+        -  "Test Set"
+        - "Test Vocab for SB Users"

@@ -1,0 +1,7 @@
+search_keyword: "ocean"
+expected_vocabulary_sets:
+  by_zinc:
+    - "10 Word Vocab Set for '99% of the plastic we throw in the ocean has mysteriously disappeared'"
+    - "10 Word Vocab Set for 'How Microscopic Ocean Life May Help Make It Rain'"
+  by_teachers:
+    - "How Microscopic Ocean Life May Help Make it Rain"
