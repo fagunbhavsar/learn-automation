@@ -1,118 +1,166 @@
 Using the functional profile...
-[36m@users[0m [36m@functional[0m
-Feature: Login as zinc user
+[36m@basicapp[0m [36m@functional[0m
+Feature: Create a basic app to send an SMS or an Email
 
-  [36m@admin[0m
-  Scenario: Login as zinc admin[90m                                 # features/users.feature:5[0m
-[31m  Unable to find chromedriver. Please download the server from http://chromedriver.storage.googleapis.com/index.html and place it somewhere on your PATH. More info at https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver.[0m
-[31m  (Selenium::WebDriver::Error::WebDriverError)[0m
-[31m ./features/support/driver.rb:18:in `new'[0m
-[31m ./features/support/driver.rb:18:in `desktop'[0m
-[31m ./features/support/driver.rb:14:in `load'[0m
-[31m ./features/support/driver.rb:10:in `get'[0m
-[31m ./features/support/hooks.rb:8:in `Before'[0m
-    [36mGiven I open zinc homepage[90m                                  # features/steps/users.rb:1[0m[0m
-    [36mThen I click on login[90m                                       # features/steps/users.rb:5[0m[0m
-    [36mAnd I enter username and password for [36m[1m"fagun-site-admin"[0m[0m[36m[90m    # features/steps/users.rb:9[0m[0m
-    [36mThen I see homepage with site admin link in top bar[90m         # features/steps/users.rb:16[0m[0m
-    [36mThen I see following sections in top bar[90m                    # features/steps/users.rb:63[0m[0m
-      | [36mAssignments[0m[0m |[0m
-      | [36mArticles   [0m[0m |[0m
-      | [36mVocabulary [0m[0m |[0m
-      | [36mSkillsnew  [0m[0m |[0m
-      | [36mReports    [0m[0m |[0m
-      | [36mAdmin      [0m[0m |[0m
-    [36mAnd I should see my username with following profile options[90m # features/steps/users.rb:69[0m[0m
-      | [36mProfile[0m[0m |[0m
-      | [36mLog out[0m[0m |[0m
-[31m      undefined method `close' for nil:NilClass (NoMethodError)[0m
-[31m      ./features/support/hooks.rb:15:in `After'[0m
+  [36m@smsoremail[0m
+  Scenario: Create basic app to send sms & email[90m                                       # features/basicapp.feature:6[0m
+    [33mGiven I open quick fuse app link[90m                                                   # features/basicapp.feature:7[0m[0m
+    [33mThen I click on Create an app button[90m                                               # features/basicapp.feature:8[0m[0m
+    [33mThen I see a popup[90m                                                                 # features/basicapp.feature:9[0m[0m
+    [33mAnd I click on Let's get started button[90m                                            # features/basicapp.feature:10[0m[0m
+    [33mThen I see application panel[90m                                                       # features/basicapp.feature:11[0m[0m
+    [33mAnd I see Basic tab is opened with following sections on left hand side column[90m     # features/basicapp.feature:12[0m[0m
+      | [36mHang Up or Exit   [0m[0m |[0m
+      | [36mSimple Prompt     [0m[0m |[0m
+      | [36mMultipart Prompt  [0m[0m |[0m
+      | [36mJump to Page      [0m[0m |[0m
+      | [36mSimple Menu       [0m[0m |[0m
+      | [36mTransfer          [0m[0m |[0m
+      | [36mYes or No         [0m[0m |[0m
+      | [36mMultipart + Yes/No[0m[0m |[0m
+      | [36mDigits Input      [0m[0m |[0m
+      | [36mMultiple Choice   [0m[0m |[0m
+      | [36mVoice Recording   [0m[0m |[0m
+      | [36mLabel             [0m[0m |[0m
+    [33mThen I see Messaging tab on left hand side column[90m                                  # features/basicapp.feature:25[0m[0m
+    [33mAnd I click on Messaging tab[90m                                                       # features/basicapp.feature:26[0m[0m
+    [33mThen I see following sections[90m                                                      # features/basicapp.feature:27[0m[0m
+      | [36mFetch Twitter Feed[0m[0m |[0m
+      | [36mSend an Email     [0m[0m |[0m
+      | [36mSend an SMS       [0m[0m |[0m
+    [33mAnd I see Start module on application panel[90m                                        # features/basicapp.feature:31[0m[0m
+    [33mThen I click on New page button[90m                                                    # features/basicapp.feature:32[0m[0m
+    [33mThen I see New Page popup[90m                                                          # features/basicapp.feature:33[0m[0m
+    [33mAnd I enter name for "New App"[90m                                                     # features/basicapp.feature:34[0m[0m
+    [33mAnd I click on create button[90m                                                       # features/basicapp.feature:35[0m[0m
+    [33mThen I click on Messaging tab[90m                                                      # features/basicapp.feature:36[0m[0m
+    [33mThen I drag Send an SMS module to application panel[90m                                # features/basicapp.feature:37[0m[0m
+    [33mAnd I see Sent and Not Sent ports[90m                                                  # features/basicapp.feature:38[0m[0m
+    [33mAnd I connect Start and Send an SMS modules[90m                                        # features/basicapp.feature:39[0m[0m
+    [33mThen I enter number for "Phone Number"[90m                                             # features/basicapp.feature:40[0m[0m
+    [33mAnd I enter message for "Message Phrase"[90m                                           # features/basicapp.feature:41[0m[0m
+    [33mThen I drag another component Send an Email to application panel[90m                   # features/basicapp.feature:42[0m[0m
+    [33mAnd I join Send an SMS component from Not Sent port to Send an Email component[90m     # features/basicapp.feature:43[0m[0m
+    [33mThen I click on Basic tab[90m                                                          # features/basicapp.feature:44[0m[0m
+    [33mThen I drag Hang Up or Exit component to application panel[90m                         # features/basicapp.feature:45[0m[0m
+    [33mAnd I join Hang Up or Exit component from Sent port to Send an SMS component[90m       # features/basicapp.feature:46[0m[0m
+    [33mThen I drag another Hang up or Exit component to application panel[90m                 # features/basicapp.feature:47[0m[0m
+    [33mAnd I join Hang Up or Exit component from Not Sent port to Send an Email component[90m # features/basicapp.feature:48[0m[0m
+    [33mAnd I join Hang Up or Exit component from Sent port to Send an Email Component[90m     # features/basicapp.feature:49[0m[0m
 
-  [36m@student[0m
-  Scenario: Login as a zinc student[90m                             # features/users.feature:22[0m
-[31m  Unable to find chromedriver. Please download the server from http://chromedriver.storage.googleapis.com/index.html and place it somewhere on your PATH. More info at https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver.[0m
-[31m  (Selenium::WebDriver::Error::WebDriverError)[0m
-[31m ./features/support/driver.rb:18:in `new'[0m
-[31m ./features/support/driver.rb:18:in `desktop'[0m
-[31m ./features/support/driver.rb:14:in `load'[0m
-[31m ./features/support/driver.rb:10:in `get'[0m
-[31m ./features/support/hooks.rb:8:in `Before'[0m
-    [36mGiven I open zinc homepage[90m                                  # features/steps/users.rb:1[0m[0m
-    [36mThen I click on login[90m                                       # features/steps/users.rb:5[0m[0m
-    [36mAnd I enter username and password for [36m[1m"fagun-student"[0m[0m[36m[90m       # features/steps/users.rb:9[0m[0m
-    [36mAnd I do not see site admin link and admin button[90m           # features/steps/users.rb:21[0m[0m
-    [36mAnd I see following sections in top bar[90m                     # features/steps/users.rb:63[0m[0m
-      | [36mArticles  [0m[0m |[0m
-      | [36mVocabulary[0m[0m |[0m
-      | [36mSkillsnew [0m[0m |[0m
-      | [36mReports   [0m[0m |[0m
-      | [36mClasses   [0m[0m |[0m
-    [36mAnd I should see my username with following profile options[90m # features/steps/users.rb:69[0m[0m
-      | [36mProfile[0m[0m |[0m
-      | [36mLog out[0m[0m |[0m
-[31m      undefined method `close' for nil:NilClass (NoMethodError)[0m
-[31m      ./features/support/hooks.rb:15:in `After'[0m
+1 scenario ([33m1 undefined[0m)
+28 steps ([33m28 undefined[0m)
+0m3.198s
+[33m[0m
+[33mYou can implement step definitions for undefined steps with these snippets:[0m
+[33m[0m
+[33mGiven("I open quick fuse app link") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I click on Create an app button") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I see a popup") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I click on Let's get started button") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I see application panel") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I see Basic tab is opened with following sections on left hand side column") do |table|[0m
+[33m  # table is a Cucumber::MultilineArgument::DataTable[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I see Messaging tab on left hand side column") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I click on Messaging tab") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I see following sections") do |table|[0m
+[33m  # table is a Cucumber::MultilineArgument::DataTable[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I see Start module on application panel") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I click on New page button") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I see New Page popup") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I enter name for {string}") do |string|[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I click on create button") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I drag Send an SMS module to application panel") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I see Sent and Not Sent ports") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I connect Start and Send an SMS modules") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I enter number for {string}") do |string|[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I enter message for {string}") do |string|[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I drag another component Send an Email to application panel") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I join Send an SMS component from Not Sent port to Send an Email component") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I click on Basic tab") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I drag Hang Up or Exit component to application panel") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I join Hang Up or Exit component from Sent port to Send an SMS component") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I drag another Hang up or Exit component to application panel") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I join Hang Up or Exit component from Not Sent port to Send an Email component") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mThen("I join Hang Up or Exit component from Sent port to Send an Email Component") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
 
-  [36m@schoolAdmin[0m
-  Scenario: Login as a school admin[90m                             # features/users.feature:39[0m
-[31m  Unable to find chromedriver. Please download the server from http://chromedriver.storage.googleapis.com/index.html and place it somewhere on your PATH. More info at https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver.[0m
-[31m  (Selenium::WebDriver::Error::WebDriverError)[0m
-[31m ./features/support/driver.rb:18:in `new'[0m
-[31m ./features/support/driver.rb:18:in `desktop'[0m
-[31m ./features/support/driver.rb:14:in `load'[0m
-[31m ./features/support/driver.rb:10:in `get'[0m
-[31m ./features/support/hooks.rb:8:in `Before'[0m
-    [36mGiven I open zinc homepage[90m                                  # features/steps/users.rb:1[0m[0m
-    [36mThen I click on login[90m                                       # features/steps/users.rb:5[0m[0m
-    [36mAnd I enter username and password for [36m[1m"fagun-school-admin"[0m[0m[36m[90m  # features/steps/users.rb:9[0m[0m
-    [36mAnd I do not see site admin link[90m                            # features/steps/users.rb:29[0m[0m
-    [36mAnd I see Admin link button[90m                                 # features/steps/users.rb:34[0m[0m
-    [36mThen I see following sections in top bar[90m                    # features/steps/users.rb:63[0m[0m
-      | [36mAssignments[0m[0m |[0m
-      | [36mArticles   [0m[0m |[0m
-      | [36mVocabulary [0m[0m |[0m
-      | [36mSkillsnew  [0m[0m |[0m
-      | [36mReports    [0m[0m |[0m
-      | [36mAdmin      [0m[0m |[0m
-    [36mAnd I should see my username with following profile options[90m # features/steps/users.rb:69[0m[0m
-      | [36mProfile[0m[0m |[0m
-      | [36mLog out[0m[0m |[0m
-[31m      undefined method `close' for nil:NilClass (NoMethodError)[0m
-[31m      ./features/support/hooks.rb:15:in `After'[0m
-
-  [36m@teacher[0m
-  Scenario: Login as a school teacher[90m                            # features/users.feature:58[0m
-[31m  Unable to find chromedriver. Please download the server from http://chromedriver.storage.googleapis.com/index.html and place it somewhere on your PATH. More info at https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver.[0m
-[31m  (Selenium::WebDriver::Error::WebDriverError)[0m
-[31m ./features/support/driver.rb:18:in `new'[0m
-[31m ./features/support/driver.rb:18:in `desktop'[0m
-[31m ./features/support/driver.rb:14:in `load'[0m
-[31m ./features/support/driver.rb:10:in `get'[0m
-[31m ./features/support/hooks.rb:8:in `Before'[0m
-    [36mGiven I open zinc homepage[90m                                   # features/steps/users.rb:1[0m[0m
-    [36mThen I click on login[90m                                        # features/steps/users.rb:5[0m[0m
-    [36mAnd I enter username and password for [36m[1m"fagun-teacher"[0m[0m[36m[90m        # features/steps/users.rb:9[0m[0m
-    [36mAnd I do not see site admin link[90m                             # features/steps/users.rb:29[0m[0m
-    [36mAnd I see Admin link button[90m                                  # features/steps/users.rb:34[0m[0m
-    [36mThen I see following sections in top bar[90m                     # features/steps/users.rb:63[0m[0m
-      | [36mAssignments[0m[0m |[0m
-      | [36mArticles   [0m[0m |[0m
-      | [36mVocabulary [0m[0m |[0m
-      | [36mSkillsnew  [0m[0m |[0m
-      | [36mReports    [0m[0m |[0m
-      | [36mAdmin      [0m[0m |[0m
-    [36mThen I should see my username with following profile options[90m # features/steps/users.rb:69[0m[0m
-      | [36mProfile[0m[0m |[0m
-      | [36mLog out[0m[0m |[0m
-[31m      undefined method `close' for nil:NilClass (NoMethodError)[0m
-[31m      ./features/support/hooks.rb:15:in `After'[0m
-
-[31mFailing Scenarios:[0m
-[31mcucumber -p functional features/users.feature:5[0m[90m # Scenario: Login as zinc admin[0m
-[31mcucumber -p functional features/users.feature:22[0m[90m # Scenario: Login as a zinc student[0m
-[31mcucumber -p functional features/users.feature:39[0m[90m # Scenario: Login as a school admin[0m
-[31mcucumber -p functional features/users.feature:58[0m[90m # Scenario: Login as a school teacher[0m
-
-4 scenarios ([31m4 failed[0m)
-26 steps ([36m26 skipped[0m)
-0m0.201s
