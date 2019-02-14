@@ -1,5 +1,5 @@
 require 'rspec'
-require 'watir-webdriver'
+require 'watir'
 require 'fig_newton'
 require 'look_like'
 
