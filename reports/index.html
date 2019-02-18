@@ -4,163 +4,52 @@ Feature: Create a basic app to send an SMS or an Email
 
   [36m@smsoremail[0m
   Scenario: Create basic app to send sms & email[90m                                       # features/basicapp.feature:6[0m
-    [33mGiven I open quick fuse app link[90m                                                   # features/basicapp.feature:7[0m[0m
-    [33mThen I click on Create an app button[90m                                               # features/basicapp.feature:8[0m[0m
-    [33mThen I see a popup[90m                                                                 # features/basicapp.feature:9[0m[0m
-    [33mAnd I click on Let's get started button[90m                                            # features/basicapp.feature:10[0m[0m
-    [33mThen I see application panel[90m                                                       # features/basicapp.feature:11[0m[0m
-    [33mAnd I see Basic tab is opened with following sections on left hand side column[90m     # features/basicapp.feature:12[0m[0m
-      | [36mHang Up or Exit   [0m[0m |[0m
-      | [36mSimple Prompt     [0m[0m |[0m
-      | [36mMultipart Prompt  [0m[0m |[0m
-      | [36mJump to Page      [0m[0m |[0m
-      | [36mSimple Menu       [0m[0m |[0m
-      | [36mTransfer          [0m[0m |[0m
-      | [36mYes or No         [0m[0m |[0m
-      | [36mMultipart + Yes/No[0m[0m |[0m
-      | [36mDigits Input      [0m[0m |[0m
-      | [36mMultiple Choice   [0m[0m |[0m
-      | [36mVoice Recording   [0m[0m |[0m
-      | [36mLabel             [0m[0m |[0m
-    [33mThen I see Messaging tab on left hand side column[90m                                  # features/basicapp.feature:25[0m[0m
-    [33mAnd I click on Messaging tab[90m                                                       # features/basicapp.feature:26[0m[0m
-    [33mThen I see following sections[90m                                                      # features/basicapp.feature:27[0m[0m
-      | [36mFetch Twitter Feed[0m[0m |[0m
-      | [36mSend an Email     [0m[0m |[0m
-      | [36mSend an SMS       [0m[0m |[0m
-    [33mAnd I see Start module on application panel[90m                                        # features/basicapp.feature:31[0m[0m
-    [33mThen I click on New page button[90m                                                    # features/basicapp.feature:32[0m[0m
-    [33mThen I see New Page popup[90m                                                          # features/basicapp.feature:33[0m[0m
-    [33mAnd I enter name for "New App"[90m                                                     # features/basicapp.feature:34[0m[0m
-    [33mAnd I click on create button[90m                                                       # features/basicapp.feature:35[0m[0m
-    [33mThen I click on Messaging tab[90m                                                      # features/basicapp.feature:36[0m[0m
-    [33mThen I drag Send an SMS module to application panel[90m                                # features/basicapp.feature:37[0m[0m
-    [33mAnd I see Sent and Not Sent ports[90m                                                  # features/basicapp.feature:38[0m[0m
-    [33mAnd I connect Start and Send an SMS modules[90m                                        # features/basicapp.feature:39[0m[0m
-    [33mThen I enter number for "Phone Number"[90m                                             # features/basicapp.feature:40[0m[0m
-    [33mAnd I enter message for "Message Phrase"[90m                                           # features/basicapp.feature:41[0m[0m
-    [33mThen I drag another component Send an Email to application panel[90m                   # features/basicapp.feature:42[0m[0m
-    [33mAnd I join Send an SMS component from Not Sent port to Send an Email component[90m     # features/basicapp.feature:43[0m[0m
-    [33mThen I click on Basic tab[90m                                                          # features/basicapp.feature:44[0m[0m
-    [33mThen I drag Hang Up or Exit component to application panel[90m                         # features/basicapp.feature:45[0m[0m
-    [33mAnd I join Hang Up or Exit component from Sent port to Send an SMS component[90m       # features/basicapp.feature:46[0m[0m
-    [33mThen I drag another Hang up or Exit component to application panel[90m                 # features/basicapp.feature:47[0m[0m
-    [33mAnd I join Hang Up or Exit component from Not Sent port to Send an Email component[90m # features/basicapp.feature:48[0m[0m
-    [33mAnd I join Hang Up or Exit component from Sent port to Send an Email Component[90m     # features/basicapp.feature:49[0m[0m
+    [32mGiven I open quick fuse app link[90m                                                   # features/steps/basicapp.rb:1[0m[0m
+    [32mThen I click on Create an app button[90m                                               # features/steps/basicapp.rb:5[0m[0m
+    [32mThen I see a popup[90m                                                                 # features/steps/basicapp.rb:9[0m[0m
+    [32mAnd I click on Let's get started button[90m                                            # features/steps/basicapp.rb:13[0m[0m
+    [32mThen I see application panel[90m                                                       # features/steps/basicapp.rb:17[0m[0m
+      #And   I see Basic tab is opened with following sections on left hand side column
+      #| Hang Up or Exit    |
+      #| Simple Prompt      |
+      #| Multipart Prompt   |
+      #| Jump to Page       |
+      #| Simple Menu        |
+      #| Transfer           |
+      #| Yes or No          |
+      #| Multipart + Yes/No |
+      #| Digits Input       |
+      #| Multiple Choice    |
+      #| Voice Recording    |
+      #| Label              |
+    [32mThen I see Messaging tab on left hand side column[90m                                  # features/steps/basicapp.rb:26[0m[0m
+    [32mAnd I click on Messaging tab[90m                                                       # features/steps/basicapp.rb:31[0m[0m
+      #Then  I see following sections
+      #| Fetch Twitter Feed |
+      #| Send an Email      |
+      #| Send an SMS        |
+    [32mAnd I see Start module on application panel[90m                                        # features/steps/basicapp.rb:40[0m[0m
+    [32mThen I click on New page button[90m                                                    # features/steps/basicapp.rb:45[0m[0m
+    [32mThen I see New Page popup[90m                                                          # features/steps/basicapp.rb:49[0m[0m
+    [32mAnd I enter name for [32m[1m"New App"[0m[0m[32m[90m                                                     # features/steps/basicapp.rb:54[0m[0m
+    [32mThen I click on Messaging tab[90m                                                      # features/steps/basicapp.rb:31[0m[0m
+    [32mThen I drag Send an SMS module to application panel[90m                                # features/steps/basicapp.rb:62[0m[0m
+    [32mAnd I see Sent and Not Sent ports[90m                                                  # features/steps/basicapp.rb:66[0m[0m
+    [32mAnd I connect Start and Send an SMS modules[90m                                        # features/steps/basicapp.rb:70[0m[0m
+    [33mThen I enter number for [33m[1m"Phone Number"[0m[0m[33m[90m                                             # features/steps/basicapp.rb:74[0m[0m
+[33m      TODO (Cucumber::Pending)[0m
+[33m      ./features/steps/basicapp.rb:75:in `"I enter number for {string}"'[0m
+[33m      features/basicapp.feature:39:in `Then I enter number for "Phone Number"'[0m
+    [36mAnd I enter message for [36m[1m"Message Phrase"[0m[0m[36m[90m                                           # features/steps/basicapp.rb:78[0m[0m
+    [36mThen I drag another component Send an Email to application panel[90m                   # features/steps/basicapp.rb:82[0m[0m
+    [36mAnd I join Send an SMS component from Not Sent port to Send an Email component[90m     # features/steps/basicapp.rb:86[0m[0m
+    [36mThen I click on Basic tab[90m                                                          # features/steps/basicapp.rb:90[0m[0m
+    [36mThen I drag Hang Up or Exit component to application panel[90m                         # features/steps/basicapp.rb:94[0m[0m
+    [36mAnd I join Hang Up or Exit component from Sent port to Send an SMS component[90m       # features/steps/basicapp.rb:98[0m[0m
+    [36mThen I drag another Hang up or Exit component to application panel[90m                 # features/steps/basicapp.rb:102[0m[0m
+    [36mAnd I join Hang Up or Exit component from Not Sent port to Send an Email component[90m # features/steps/basicapp.rb:106[0m[0m
+    [36mAnd I join Hang Up or Exit component from Sent port to Send an Email Component[90m     # features/steps/basicapp.rb:110[0m[0m
 
-1 scenario ([33m1 undefined[0m)
-28 steps ([33m28 undefined[0m)
-0m3.198s
-[33m[0m
-[33mYou can implement step definitions for undefined steps with these snippets:[0m
-[33m[0m
-[33mGiven("I open quick fuse app link") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I click on Create an app button") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I see a popup") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I click on Let's get started button") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I see application panel") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I see Basic tab is opened with following sections on left hand side column") do |table|[0m
-[33m  # table is a Cucumber::MultilineArgument::DataTable[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I see Messaging tab on left hand side column") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I click on Messaging tab") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I see following sections") do |table|[0m
-[33m  # table is a Cucumber::MultilineArgument::DataTable[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I see Start module on application panel") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I click on New page button") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I see New Page popup") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I enter name for {string}") do |string|[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I click on create button") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I drag Send an SMS module to application panel") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I see Sent and Not Sent ports") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I connect Start and Send an SMS modules") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I enter number for {string}") do |string|[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I enter message for {string}") do |string|[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I drag another component Send an Email to application panel") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I join Send an SMS component from Not Sent port to Send an Email component") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I click on Basic tab") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I drag Hang Up or Exit component to application panel") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I join Hang Up or Exit component from Sent port to Send an SMS component") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I drag another Hang up or Exit component to application panel") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I join Hang Up or Exit component from Not Sent port to Send an Email component") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-[33m[0m
-[33mThen("I join Hang Up or Exit component from Sent port to Send an Email Component") do[0m
-[33m  pending # Write code here that turns the phrase above into concrete actions[0m
-[33mend[0m
-
+1 scenario ([33m1 pending[0m)
+25 steps ([36m9 skipped[0m, [33m1 pending[0m, [32m15 passed[0m)
+1m21.295s
