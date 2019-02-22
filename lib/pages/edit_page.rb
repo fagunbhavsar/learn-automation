@@ -51,19 +51,19 @@ class EditPage < Page
   end
 
   def enter_new_name(title)
-    @browser.text_field(:class => 'indented submitonenter').set(title)
+    @browser.text_field(:class => 'submitonenter').set(title)
     @browser.send_keys(:return)
   end
 
   def module_send_n_sms
-    source = @browser.element(:class => 'module-item ui-widget-content ui-corner-all module-item-green ui-draggable', :text => 'Send an SMS')
-    destination = @browser.element(:class => 'ui-page-panel ui-tabs-panel ui-widget-content ui-droppable')
-    source.drag_and_drop_on destination
+    #require "pry"; binding.pry
+    @browser.div(:class => 'ui-accordion-content', :index => 3).li(:class => 'module-item', :index => 2).a(:class => 'module-add').click
   end
 
   def sms_module_ports
-    @browser.element(:id => 'node-879910').exist?
-    @browser.element(:id => 'node-361806').exist?
+    require "pry"; binding.pry
+    @browser.div(:class => "start-module-loading").div(:class => 'mod-south').div(:class => 'ui-draggable').exist?
+    @browser.div(:class => "syn-module syn-module-green").div(:class => "mod-north").div(:class => 'ui-droppable').exist?
   end
 
   def connect_sms_module
@@ -115,5 +115,4 @@ class EditPage < Page
     c.drag_and_drop_on h
   end
 
-  def 
 end
