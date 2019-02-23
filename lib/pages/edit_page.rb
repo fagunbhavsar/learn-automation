@@ -57,34 +57,75 @@ class EditPage < Page
 
   def module_send_n_sms
     #require "pry"; binding.pry
-    @browser.div(:class => 'ui-accordion-content', :index => 3).li(:class => 'module-item', :index => 2).a(:class => 'module-add').click
+    @browser.div(:class => 'ui-accordion-content', :index => 3).li(:class => 'ui-draggable', :index => 2).a(:class => 'module-add').click
   end
 
   def sms_module_ports
-    require "pry"; binding.pry
-    @browser.div(:class => "start-module-loading").div(:class => 'mod-south').div(:class => 'ui-draggable').exist?
-    @browser.div(:class => "syn-module syn-module-green").div(:class => "mod-north").div(:class => 'ui-droppable').exist?
+    #require "pry"; binding.pry
+    @browser.div(:id => "tabs-2").div(:id => "module-1").div(:class => "mod-south").div(:class => "ui-draggable").exist?
+    @browser.div(:class => "syn-module syn-module-green").div(:class => "mod-north").div(:class => "ui-droppable").exist?
   end
 
   def connect_sms_module
-    start = @browser.element(:id => 'node-98287')
-    dest = @browser.element(:id => 'rec-930891')
+    start = @browser.div(:id => "tabs-2").div(:id => "module-1").div(:class => "mod-south").div(:class => "ui-draggable")
+    dest = @browser.div(:class => "syn-module syn-module-green").div(:class => "mod-north").div(:class => "ui-droppable")
     start.drag_and_drop_on dest
   end
 
   def set_phone_number(number)
-    @browser.text_field(:name => 'phone_constant').set(number)
+    #require "pr"; binding.pry
+    @browser.textarea(:name => 'phone_constant').set(number)
   end
 
   def set_message_text(message)
-    @browser.text_field(:name => 'message_phrase[]').set(message)
+    @browser.textarea(:name => 'message_phrase[]').set(message)
   end
 
-  def module_send_n_email
-    origin = @browser.element(:class => 'module-item ui-widget-content ui-corner-all module-item-green ui-draggable', :text => 'Send an Email')
-    final = @browser.element(:class => 'ui-page-panel ui-tabs-panel ui-widget-content ui-droppable')
-    origin.drag_and_drop_on final
+  def module_send_an_email
+    #require "pry"; binding.pry
+    @browser.div(:class => 'ui-accordion-content', :index => 3).li(:class => 'ui-draggable', :index => 1).a(:class => 'module-add').click
   end
+
+  def host_name (hostname)
+    require "pry"; binding.pry
+    @browser.input(:name => 'smtp_url').set(hostname)
+  end
+
+  def port_number(portno)
+    require "pry"; binding.pry
+    @browser.div(:id => "tabs-2").div(:id => "module-3").div(:class => "panel").div(:class => "panel-bd").div(:class => "inner").div(:class => "panel-section").div(:class => "panel-subsection", :index => 1).div(:class => "left", :index => 1).input(:name => "port").set(portno)
+  end
+
+  def user_email(uemail)
+    #require "pry"; binding.pry
+    @browser.div(:id => "tabs-2").div(:id => "module-3").div(:class => "panel").div(:class => "panel-bd").div(:class => "inner").div(:class => "panel-section").div(:class => "panel-subsection", :index => 2).div(:class => "left", :index => 1).input(:name => "username").set(uemail)
+  end
+
+  def enter_password(pword)
+    #require "pry"; binding.pry
+    @browser.div(:id => "tabs-2").div(:id => "module-3").div(:class => "panel").div(:class => "panel-bd").div(:class => "inner").div(:class => "panel-section").div(:class => "panel-subsection", :index => 3).div(:class => "left", :index => 1).input(:name => "password").set(pword)
+  end
+
+  def from_address(faddress)
+    require "pry"; binding.pry
+    @browser.div(:id => "tabs-2").div(:id => "module-3").div(:class => "panel", :index => 3).div(:class => "panel-bd").div(:class => "inner").div(:class => "panel-section-nominimize").div(:class => "panel-subsection", :index => 1).div(:class => "left", :index => 2).div(:class => "syn-selectappvar-wrap").textarea(:name => "from_constant").set(faddress)
+  end
+
+  def to_address(taddress)
+    require "pry"; binding.pry
+    @browser.div(:id => "tabs-2").div(:id => "module-3").div(:class => "panel", :index => 3).div(:class => "panel-bd").div(:class => "inner").div(:class => "panel-section-nominimize").div(:class => "panel-subsection", :index => 2).div(:class => "left", :index => 2).div(:class => "syn-selectappvar-wrap").textarea(:name => "to_constant").set(taddress)
+  end
+
+  def enter_subject(subj)
+    require "pry"; binding.pry
+    @browser.div(:id => "tabs-2").div(:id => "module-3").div(:class => "panel", :index => 3).div(:class => "panel-bd").div(:class => "inner").div(:class => "panel-section-nominimize").div(:class => "panel-subsection", :index => 3).div(:class => "left", :index => 2).div(:class => "syn-selectappvar-wrap").textarea(:name => "subject_constant").set(subj)
+  end
+
+  def enter_msg(msg)
+    require "pry"; binding.pry
+    @browser.div(:id => "tabs-2").div(:id => "module-3").div(:class => "panel", :index => 3).div(:class => "panel-bd").div(:class => "inner").div(:class => "panel-section inner").div(:class => "panel-subsection").div(:class => "left").table(:class => "syn-expandinglist-rows-1", :index => 2).tbody.tr.td.div(:class => "syn-selectappvar-wrap").textarea(:name => "message_phrase[]").set(msg)
+  end
+
 
   def email_module_ports
     @browser.element(:id => 'node-895461').exist?

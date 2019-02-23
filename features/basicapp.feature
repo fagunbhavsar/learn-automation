@@ -36,14 +36,23 @@
     Then  I drag Send an SMS module to application panel
     And   I see Sent and Not Sent ports
     And   I connect Start and Send an SMS modules
-    Then  I enter number for "123456789"
-    And   I enter message for "Message Phrase"
+    Then  I enter number for "2131243253435"
+    And   I enter message for "Hello World"
     Then  I drag another component Send an Email to application panel
-    And   I join Send an SMS component from Not Sent port to Send an Email component
+    And   I enter host name as "smtp.gmail.com"
+    And   I enter port number as "465"
+    And   I enter user name as "abc@gmail.com"
+    And   I enter password as "123456"
+    And   I enter From address as "abc@gmail.com"
+    And   I enter To as "xyz@gmail.com"
+    And   I enter subject as "SMS not sent"
+    And   I enter message text as "SMS to phone no 2131243253435 nt sent"
+    Then  I join Send an SMS component from Not Sent port to Send an Email component
     Then  I click on Basic tab
     Then  I drag Hang Up or Exit component to application panel
     And   I join Hang Up or Exit component from Sent port to Send an SMS component
-    Then  I drag another Hang up or Exit component to application panel
+    Then  I drag second Hang up or Exit component to application panel
     And   I join Hang Up or Exit component from Not Sent port to Send an Email component
+    Then  I drag third Hang up or Exit component to application panel
     And   I join Hang Up or Exit component from Sent port to Send an Email Component
 

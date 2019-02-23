@@ -76,7 +76,39 @@ Then("I enter message for {string}") do |string|
 end
 
 Then("I drag another component Send an Email to application panel") do
+  on(EditPage).module_send_an_email
+end
 
+And("I enter host name as {string}") do |string|
+  on(EditPage).host_name(string)
+end
+
+And("I enter port number as {string}") do |string|
+  on(EditPage).port_number(string)
+end
+
+And("I enter user name as {string}") do |string|
+  on(EditPage).user_email(string)
+end
+
+And("I enter password as {string}") do |string|
+  on(EditPage).enter_password(string)
+end
+
+And("I enter From address as {string}") do |string|
+  on(EditPage).from_address(string)
+end
+
+And("I enter To as {string}") do |string|
+  on(EditPage).to_address(string)
+end
+
+And("I enter subject as {string}") do |string|
+  on(EditPage).enter_subject(string)
+end
+
+And("I enter message text as {string}") do |string|
+  on(EditPage).enter_msg(string)
 end
 
 Then("I join Send an SMS component from Not Sent port to Send an Email component") do
@@ -95,7 +127,7 @@ Then("I join Hang Up or Exit component from Sent port to Send an SMS component")
 
 end
 
-Then("I drag another Hang up or Exit component to application panel") do
+Then("I drag second Hang up or Exit component to application panel") do
 
 end
 
@@ -103,8 +135,14 @@ Then("I join Hang Up or Exit component from Not Sent port to Send an Email compo
 
 end
 
+Then("I drag third Hang up or Exit component to application panel") do
+
+end
+
 Then("I join Hang Up or Exit component from Sent port to Send an Email Component") do
 
 end
+
+
 
 

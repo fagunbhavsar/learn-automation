@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a2cae7a9-b197-423b-b120-7070c9bdb6e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/basicapp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/basicapp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/basicapp.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/basicapp.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/edit_page.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/edit_page.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
     </list>
@@ -16,18 +18,18 @@
     <session id="-653920081">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="feature" value="7" />
           <entry key="lock" value="1" />
-          <entry key="rb" value="43" />
+          <entry key="rb" value="44" />
           <entry key="yml" value="15" />
         </counts>
       </usages-collector>
@@ -35,21 +37,21 @@
         <counts>
           <entry key="Cucumber" value="7" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Ruby" value="43" />
+          <entry key="Ruby" value="44" />
           <entry key="YAML" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="feature" value="2339" />
-          <entry key="rb" value="4158" />
+          <entry key="feature" value="2788" />
+          <entry key="rb" value="5845" />
           <entry key="yml" value="91" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Cucumber" value="2339" />
-          <entry key="Ruby" value="4158" />
+          <entry key="Cucumber" value="2788" />
+          <entry key="Ruby" value="5845" />
           <entry key="YAML" value="91" />
         </counts>
       </usages-collector>
@@ -60,24 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/basicapp.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/pages/home_page.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-309" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/pages/app_page.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="374">
+              <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -85,17 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/pages/edit_page.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="65" column="115" selection-start-line="65" selection-start-column="115" selection-end-line="65" selection-end-column="115" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/steps/users.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="71" column="30" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="30" />
+            <state relative-caret-position="295">
+              <caret line="89" column="4" lean-forward="true" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -103,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/steps/basicapp.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+            <state relative-caret-position="549">
+              <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -123,9 +100,9 @@
         <option value="$PROJECT_DIR$/features/support/env.rb" />
         <option value="$PROJECT_DIR$/lib/pages/app_page.rb" />
         <option value="$PROJECT_DIR$/config/quickapp.yml" />
-        <option value="$PROJECT_DIR$/features/basicapp.feature" />
         <option value="$PROJECT_DIR$/features/steps/users.rb" />
         <option value="$PROJECT_DIR$/lib/pages/vocabulary_page.rb" />
+        <option value="$PROJECT_DIR$/features/basicapp.feature" />
         <option value="$PROJECT_DIR$/features/steps/basicapp.rb" />
         <option value="$PROJECT_DIR$/lib/pages/edit_page.rb" />
       </list>
@@ -146,6 +123,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,7 +179,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,17 +218,18 @@
       <updated>1550122534845</updated>
       <workItem from="1550122536400" duration="21852000" />
       <workItem from="1550250002408" duration="10057000" />
-      <workItem from="1550482597726" duration="26302000" />
+      <workItem from="1550482597726" duration="29920000" />
+      <workItem from="1550920226245" duration="12772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58211000" />
+    <option name="totallyTimeSpent" value="74601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -345,25 +323,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/app_page.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/home_page.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-309" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/steps/dashboard_steps.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-240" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/vocabulary_page.rb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/features/steps/users.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -372,24 +335,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/home_page.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/app_page.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/vocabulary_page.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/features/basicapp.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="374">
+          <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/steps/basicapp.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        <state relative-caret-position="549">
+          <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/pages/edit_page.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="65" column="115" selection-start-line="65" selection-start-column="115" selection-end-line="65" selection-end-column="115" />
+        <state relative-caret-position="295">
+          <caret line="89" column="4" lean-forward="true" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
         </state>
       </provider>
     </entry>

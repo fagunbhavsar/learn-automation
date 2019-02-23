@@ -28,3 +28,14 @@ Feature: Create a basic app to send an SMS or an Email
       #| Fetch Twitter Feed |
       #| Send an Email      |
       #| Send an SMS        |
+    [32mAnd I see Start module on application panel[90m                                        # features/steps/basicapp.rb:40[0m[0m
+    [32mThen I click on New page button[90m                                                    # features/steps/basicapp.rb:45[0m[0m
+    [32mThen I see New Page popup[90m                                                          # features/steps/basicapp.rb:49[0m[0m
+    [32mAnd I enter name for [32m[1m"New App"[0m[0m[32m[90m                                                     # features/steps/basicapp.rb:54[0m[0m
+    [32mThen I click on Messaging tab[90m                                                      # features/steps/basicapp.rb:31[0m[0m
+    [32mThen I drag Send an SMS module to application panel[90m                                # features/steps/basicapp.rb:58[0m[0m
+    [32mAnd I see Sent and Not Sent ports[90m                                                  # features/steps/basicapp.rb:62[0m[0m
+    [32mAnd I connect Start and Send an SMS modules[90m                                        # features/steps/basicapp.rb:66[0m[0m
+    [32mThen I enter number for [32m[1m"2131243253435"[0m[0m[32m[90m                                            # features/steps/basicapp.rb:70[0m[0m
+    [32mAnd I enter message for [32m[1m"Hello World"[0m[0m[32m[90m                                              # features/steps/basicapp.rb:74[0m[0m
+    [32mThen I drag another component Send an Email to application panel[90m                   # features/steps/basicapp.rb:78[0m[0m
