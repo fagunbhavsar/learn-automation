@@ -34,12 +34,11 @@
     And   I enter name for "New App"
     Then  I click on Messaging tab
     Then  I drag Send an SMS module to application panel
-    And   I see Sent and Not Sent ports
     And   I connect Start and Send an SMS modules
     Then  I enter number for "2131243253435"
     And   I enter message for "Hello World"
     Then  I drag another component Send an Email to application panel
-    And   I enter host name as "smtp.gmail.com"
+    And   I enter host name for "smtp.gmail.com"
     And   I enter port number as "465"
     And   I enter user name as "abc@gmail.com"
     And   I enter password as "123456"
