@@ -2,7 +2,7 @@ Before do
   data_dir = FigNewton.data.send(ENV['data_suite'])
   @data_suite = DataSuite.new(data_dir)
   users_file = FigNewton.users.send(ENV['users'])
-  @users = Users.new(YAML.load_file(users_file))
+  #@users = Users.new(YAML.load_file(users_file))
   client = FigNewton.clients.send(ENV['client'])
 
   @browser = Driver.get(client)
