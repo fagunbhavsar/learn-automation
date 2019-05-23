@@ -1,6 +1,7 @@
 urls :
   default : http://quickfuseapps.com/
 
+
 data :
   default : config/data
   mobile  : config/data
