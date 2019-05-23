@@ -1,6 +1,5 @@
-.idea/workspace.xml
-.idea/learn-automation.iml
-reports/index.html
+.idea/
+reports/
 You are allowed to: 
 1. Remove rake task
 2. Add existing rake tasks
