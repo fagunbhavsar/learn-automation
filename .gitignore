@@ -1,6 +1,6 @@
-.idea/
-
-reports/
+.idea/Formy-project.iml
+.idea/modules.xml
+.idea/workspace.xml
 
 You are allowed to: 
 1. Remove rake task
