@@ -20,6 +20,7 @@ Before do |scenario|
   data_tag = scenario.tags.find { |tag| tag.name.start_with? '@data' }
   file_name = data_tag.name.split('(')[1].split(')')[0].delete("'").delete('"') if data_tag
   @data = file_name ? @data_suite.fromFile(feature_path, file_name) : @data_suite.load(feature_path, scenario.name)
+  #require "pry"; binding.pry
   @scenario_tags = scenario.source_tag_names
 end
 

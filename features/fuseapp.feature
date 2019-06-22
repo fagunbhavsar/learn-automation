@@ -31,21 +31,21 @@
     And   I see Start module on application panel
     Then  I click on New page button
     Then  I see New Page popup
-    And   I enter name for "New App"
+    And   I enter an app name
     Then  I click on Messaging tab
     Then  I drag Send an SMS module to application panel
     And   I connect Start and Send an SMS modules
-    Then  I enter number for "2131243253435"
-    And   I enter message for "Hello World"
+    Then  I enter number as "phone_number"
+    And   I enter message as "app_message"
     Then  I drag another component Send an Email to application panel
-    And   I enter host name for "smtp.gmail.com"
-    And   I enter port number as "465"
-    And   I enter user name as "abc@gmail.com"
-    And   I enter password as "123456"
-    And   I enter From address as "abc@gmail.com"
-    And   I enter To as "xyz@gmail.com"
-    And   I enter subject as "SMS not sent"
-    And   I enter message text as "SMS to phone no 2131243253435 nt sent"
+    And   I enter host name as "app_host"
+    And   I enter port number as "port_number"
+    And   I enter user name as "app_user"
+    And   I enter password as "app_password"
+    And   I enter From address as "frm_address"
+    And   I enter To as "to_address"
+    And   I enter subject as "mail_subject"
+    And   I enter message text as "text_message"
     Then  I join Send an SMS component from Not Sent port to Send an Email component
     Then  I click on Basic tab
     Then  I drag Hang Up or Exit component to application panel
