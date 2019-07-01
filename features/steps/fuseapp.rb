@@ -68,49 +68,49 @@ Then("I connect Start and Send an SMS modules") do
    on(EditFuseappPage).connect_sms_module
 end
 
-Then("I enter number as {string}") do |string|
+Then("I enter a contact number") do
   #require "pry" ; binding.pry
-  on(EditFuseappPage).set_phone_number(string)
+  on(EditFuseappPage).set_phone_number(@data["phone_number"])
 end
 
-Then("I enter message as {string}") do |string|
-  on(EditFuseappPage).set_message_text(string)
+Then("I enter an app message") do
+  on(EditFuseappPage).set_message_text(@data["app_message"])
 end
 
 Then("I drag another component Send an Email to application panel") do
   on(EditFuseappPage).module_send_an_email
 end
 
-And("I enter host name as {string}") do |string|
-  on(EditFuseappPage).set_host_name(string)
+And("I enter a host name") do
+  on(EditFuseappPage).set_host_name(@data["app_host"])
 end
 
-And("I enter port number as {string}") do |string|
-  on(EditFuseappPage).set_port_number(string)
+And("I enter a port number") do
+  on(EditFuseappPage).set_port_number(@data["port_number"])
 end
 
-And("I enter user name as {string}") do |string|
-  on(EditFuseappPage).set_user_email(string)
+And("I enter a user name") do
+  on(EditFuseappPage).set_user_email(@data["app_user"])
 end
 
-And("I enter password as {string}") do |string|
-  on(EditFuseappPage).set_enter_password(string)
+And("I enter a password") do
+  on(EditFuseappPage).set_enter_password(@data["app_password"])
 end
 
-And("I enter From address as {string}") do |string|
-  on(EditFuseappPage).set_from_address(string)
+And("I enter From address") do
+  on(EditFuseappPage).set_from_address(@data["frm_address"])
 end
 
-And("I enter To as {string}") do |string|
-  on(EditFuseappPage).set_to_address(string)
+And("I enter To address") do
+  on(EditFuseappPage).set_to_address(@data["to_address"])
 end
 
-And("I enter subject as {string}") do |string|
-  on(EditFuseappPage).set_enter_subject(string)
+And("I enter a mail subject") do
+  on(EditFuseappPage).set_enter_subject(@data["mail_subject"])
 end
 
-And("I enter message text as {string}") do |string|
-  on(EditFuseappPage).set_enter_msg(string)
+And("I enter a text message") do
+  on(EditFuseappPage).set_enter_msg(@data["text_message"])
 end
 
 Then("I join Send an SMS component from Not Sent port to Send an Email component") do
@@ -146,5 +146,7 @@ Then("I join Hang Up or Exit component from Sent port to Send an Email Component
 end
 
 
-
-
+And(/^I see Basic tab is opened with following sections on left hand side column$/) do |table|
+  # table is a table.hashes.keys # => [:Hang Up or Exit]
+  pending
+end
