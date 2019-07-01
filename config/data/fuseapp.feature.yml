@@ -15,5 +15,24 @@ Create basic app to send sms & email:
 Create a basic app with app name as a digit:
   app_name: "123456"
 
-Validate left side menu details on app page:
+Validate left side menu details for an opened tab called Basic on app page:
+   basic_tab:         ["Hang Up or Exit",
+                        "Simple Prompt",
+                        "Multipart Prompt",
+                        "Jump to Page",
+                        "Simple Menu",
+                        "Transfer",
+                        "Yes or No",
+                        "Multipart + Yes/No",
+                        "Digits Input",
+                        "Multiple Choice",
+                        "Voice Recording",
+                        "Label"]
+
+
+
+
+
+
+
 

@@ -70,22 +70,11 @@
     And   I enter an app name
 
   @leftsidemenu
-  Scenario: Validate left side menu details on app page
+  Scenario: Validate left side menu details for an opened tab called Basic on app page
     Given I open quick fuse app link
     Then  I click on Create an app button
     Then  I see a popup
     And   I click on Let's get started button
     Then  I see application panel
-    And   I see Basic tab is opened with following sections on left hand side column
-      | Hang Up or Exit    |
-      | Simple Prompt      |
-      | Multipart Prompt   |
-      | Jump to Page       |
-      | Simple Menu        |
-      | Transfer           |
-      | Yes or No          |
-      | Multipart + Yes/No |
-      | Digits Input       |
-      | Multiple Choice    |
-      | Voice Recording    |
-      | Label              |
+    And   I see Basic tab is opened with different sections on left hand side column
+

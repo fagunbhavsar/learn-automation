@@ -146,7 +146,8 @@ Then("I join Hang Up or Exit component from Sent port to Send an Email Component
 end
 
 
-And(/^I see Basic tab is opened with following sections on left hand side column$/) do |table|
+And(/^I see Basic tab is opened with different sections on left hand side column$/) do
   # table is a table.hashes.keys # => [:Hang Up or Exit]
-  pending
+  actual = on(EditFuseappPage).view_basic_tab_details
+  expected = @data["basic_tab"]
 end

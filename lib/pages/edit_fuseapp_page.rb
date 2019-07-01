@@ -17,10 +17,10 @@ class EditFuseappPage < Page
       @browser.element(:text => '    Basic  ').exist?
   end
 
-  #def view_basic_tab_details
-      #@browser.element(:class => 'ui-accordion-content', :index => 0).exist?
-      #@browser.element(:class => )
-  #nd
+  def view_basic_tab_details
+      basicTab = @browser.element(:class => 'ui-accordion-content', :index => 0)
+      basicTab.links.map{|link| link.text.downcase}
+  end
 
   def view_messaging_tab
       @browser.element(:text => 'Messaging').exist?
