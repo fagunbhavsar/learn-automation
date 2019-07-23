@@ -83,7 +83,7 @@ class EditFuseappPage < Page
 
   def module_send_an_email
     #require "pry"; binding.pry
-    @browser.div(:class => 'ui-accordion-content', :index => 3).li(:class => 'ui-draggable', :index => 1).drag_and_drop_by 900, 100
+    @browser.div(:class => 'ui-accordion-content', :index => 3).li(:class => 'ui-draggable', :index => 1).drag_and_drop_by x, y
   end
 
   def set_host_name (hostname)
@@ -143,7 +143,7 @@ class EditFuseappPage < Page
   def hang_up_module
     #require "pry"; binding.pry
     one = @browser.div(:class => 'ui-accordion-content').li(:class => 'ui-draggable')
-    one.drag_and_drop_by 400, 200
+    one.drag_and_drop_by x1, y1
   end
 
   def connect_hang_up_sms_module
@@ -156,7 +156,7 @@ class EditFuseappPage < Page
   def second_hang_up_module
     #require "pry"; binding.pry
     s = @browser.div(:class => 'ui-accordion-content').li(:class => 'ui-draggable')
-    s.drag_and_drop_by 400, 400
+    s.drag_and_drop_by x2, y2
   end
 
   def connect_hang_up_to_not_sent_email_module
@@ -169,7 +169,7 @@ class EditFuseappPage < Page
   def third_hang_up_module
     #require "pry"; binding.pry
     t = @browser.div(:class => 'ui-accordion-content').li(:class => 'ui-draggable')
-    t.drag_and_drop_by 600, 400
+    t.drag_and_drop_by x3, y3
   end
 
   def connect_hang_up_to_sent_email_module

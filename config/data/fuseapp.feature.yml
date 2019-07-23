@@ -11,6 +11,15 @@ Create basic app to send sms & email:
   to_address: "xyz@gmail.com"
   mail_subject: "SMS not sent"
   text_message: "SMS to phone no 2131243253435 nt sent"
+  x: 900
+  y: 100
+  x1: 400
+  y1: 200
+  x2: 400
+  y2: 400
+  x3: 600
+  y3: 400
+
 
 Create a basic app with app name as a digit:
   app_name: "123456"
