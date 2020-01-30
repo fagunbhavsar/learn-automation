@@ -1,5 +1,7 @@
 .idea
-*.DS_store
+.idea/*
+.DS_store
+.DS_store/*
 
 You are allowed to: 
 1. Remove rake task
