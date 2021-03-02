@@ -1,4 +1,4 @@
-@basicapp @functional
+@pulsediapp @functional
 
  @loginintoapp
   Scenario: Login into PulseiD app via VOL
