@@ -1,6 +1,7 @@
 @basicapp @functional
 
-  Feature: Login into PulseiD app via VOL
+  @loginintoapp
+  Scenario: Login into PulseiD app via VOL
     Given I open PulseiD app in the browser
     Then I click on Sign in with VOL button
     Then I enter email address
@@ -8,7 +9,8 @@
     And I click on Sign in button
     Then I should be taken to Offers tab view
 
-  Feature: Create new offer rule - percentage discount
+  @createnewrulepercentage
+  Scenario: Create new offer rule - percentage discount
     Given I login into Pulseid app
     Then I click on create button under Offers tab from left hand side navigation
     Then I click on Create New Offer button
@@ -22,7 +24,8 @@
     Then I click on Finish later button
     Then I should be able to search and see newly created offer rule
 
-  Feature: Create new offer
+  @createnewoffer
+  Scenario: Create new offer
     Given I login into Pulseid app
     Then I see the offer dashboard
     Then I click on offer rules widget
