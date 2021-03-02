@@ -77,4 +77,3 @@
     And   I click on Let's get started button
     Then  I see application panel
     And   I see Basic tab is opened with different sections on left hand side column
-
